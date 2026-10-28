@@ -1,3 +1,12 @@
+:root {
+  --warna-text-utama : #12372A;
+  --warna-button : #2EAD70;
+  --warna-deskripsi : #52606D;
+  --size-text-deskripsi : 16px;
+  --size-judul : 50px;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +35,7 @@ header {
 .nav-logo {
     font-size: 22px;
     font-weight: 800;
-    color: #12372A;
+    color: var(--warna-text-utama);
     text-decoration: none;
 }
 
@@ -43,12 +52,12 @@ header {
 }
 
 .nav-item:hover, .nav-item.active{
-    color: #2EAD70;
+    color: var(--warna-button);
     transition: color 0.2s ease;
 }
 
 .btn-unduh{
-    background-color: #2EAD70;
+    background-color: var(--warna-button);
     padding: 10px 22px;
     border-radius: 25px;
     color: white;
@@ -89,7 +98,7 @@ header {
   padding: 6px 16px;
   font-size: 13px;
   font-weight: 700;
-  color: #2EAD70;
+  color: var(--warna-button);
   background: #E7F7EE;
   border: 1px solid #CBEFDB;
   border-radius: 100px;
@@ -97,16 +106,16 @@ header {
 }
 
 .judul-hero{
-    font-size: 50px;
+    font-size: var(--size-judul);
     font-weight: 800;
     display: flex;
     line-height: 1;
-    color: #12372A;
+    color: var(--warna-text-utama);
 }
 
 .hero-description{
-    font-size: 16px;
-    color: #52606D;
+    font-size: var(--size-text-deskripsi);
+    color: var(--warna-deskripsi);
     line-height: 1.65;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -119,7 +128,7 @@ header {
 }
 
 .button-hero-ios{
-    background-color: #2EAD70;
+    background-color: var(--warna-button);
     padding: 10px 22px;
     border-radius: 25px;    
     color: white;
@@ -160,7 +169,7 @@ header {
   margin-bottom: 25px;
   margin-top: 15px;
   line-height: 1.6;
-  color: #52606d;
+  color: var(--warna-deskripsi);
 }
 
 /* features secatin*/
@@ -177,15 +186,15 @@ header {
 }
 
 .features-title {
-  font-size: 36px;
+  font-size: var(--size-judul);
   font-weight: 800;
-  color: #12372A;
+  color: var(--warna-text-utama);
   margin-bottom: 12px;
 }
 
 .features-subtitle {
   font-size: 16px;
-  color: #52606D;
+  color: var(--warna-deskripsi);
   line-height: 1.6;
 }
 
@@ -222,7 +231,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  color: #2EAD70;
+  color: var(--warna-button);
   font-size: 24px;
   transition: all 0.3s ease;
 }
@@ -231,14 +240,14 @@ header {
 .feature-title {
   font-size: 18px;
   font-weight: 700;
-  color: #12372A;
-  margin-bottom: 10px;
+  color: var(--warna-text-utama);
+  margin-bottom: 10px;x 
   line-height: 1.3;
 }
 
 .feature-desc {
-  font-size: 14px;
-  color: #52606D;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-deskripsi);
   line-height: 1.65;
 }
 
@@ -272,7 +281,7 @@ header {
   padding: 6px 16px;
   font-size: 13px;
   font-weight: 700;
-  color: #2EAD70;
+  color: var(--warna-button);
   background: #E7F7EE;
   border: 1px solid #CBEFDB;
   border-radius: 100px;
@@ -280,16 +289,16 @@ header {
 }
 
 .solution-title {
-  font-size: 36px;
+  font-size: var(--size-judul);
   font-weight: 800;
-  color: #12372A;
+  color: var(--warna-text-utama);
   line-height: 1.2;
   margin-bottom: 16px;
 }
 
 .solution-desc {
-  font-size: 16px;
-  color: #52606D;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-deskripsi);
   line-height: 1.7;
   margin-bottom: 32px;
 }
@@ -310,7 +319,7 @@ header {
 }
 
 .solution-benefits i {
-  color: #2EAD70;
+  color: var(--warna-button);
   font-size: 14px;
   width: 20px;
   height: 20px;
@@ -329,7 +338,7 @@ header {
   font-size: 15px;
   font-weight: 700;
   color: white;
-  background: #2EAD70;
+  background: var(--warna-button);
   border-radius: 100px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -372,7 +381,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2EAD70;
+  color: var(--warna-button);
   font-size: 20px;
   margin-bottom: 16px;
 }
@@ -389,14 +398,14 @@ header {
 .stat-value {
   font-size: 24px;
   font-weight: 800;
-  color: #12372A;
+  color: var(--warna-text-utama);
   line-height: 1.2;
   margin-bottom: 6px;
 }
 
 .stat-desc {
-  font-size: 13px;
-  color: #2EAD70;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-button);
   font-weight: 600;
   line-height: 1.4;
 }
@@ -427,16 +436,16 @@ header {
 }
 
 .about-title {
-  font-size: 36px;
-  color: #12372A;
+  font-size: var(--size-judul);
+  color: var(--warna-text-utama);
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 16px;
 }
 
 .about-desc {
-  font-size: 15px;
-  color: #52606D;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-deskripsi);
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -454,7 +463,7 @@ header {
 .value-icon {
   border-radius: 12px;
   font-size: 18px;
-  color: #2EAD70;
+  color: var(--warna-button);
   background-color: #E7F7EE;
   width: 70px;
   height: 50px;
@@ -466,17 +475,17 @@ header {
 .value-title {
   font-weight: 700;
   font-size: 15px;
-  color: #12372A;
+  color: var(--warna-text-utama);
 }
 
 .value-desc {
-  font-size: 13px;
-  color: #52606D;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-deskripsi);
   line-height: 1.5;
 }
 
 .box-about-kanan {
-  background-color: #12372A;
+  background-color: var(--warna-text-utama);
   color: white;
   padding: 30px 20px;
   border-radius: 24px;
@@ -526,7 +535,7 @@ header {
 }
 
 .card-desc{
-  font-size: 14px;
+  font-size: var(--size-text-deskripsi);
   color: #cbefdb;
   margin-top: 5px;
 }
@@ -551,21 +560,21 @@ header {
 
 .call-badge {
   font-size: 14px;
-  color: #12372A;
+  color: var(--warna-text-utama);
   font-weight: 700;
 }
 
 .call-title {
   font-size: 32px;
   font-weight: 800;
-  color: #12372A;
+  color: var(--warna-text-utama);
   line-height: 1.25;
   margin: 12px 0;
 }
 
 .call-desc {
-  font-size: 15px;
-  color: #52606D;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-deskripsi);
   line-height: 1.6;
 }
 
@@ -588,20 +597,20 @@ header {
   justify-content: center;
   border-radius: 12px;
   font-size: 18px;
-  color: #2EAD70;
+  color: var(--warna-button);
   background-color: #E7F7EE;
 }
 
 .call-title-card {
   font-size: 12px;
-  color: #52606D;
+  color: var(--warna-deskripsi);
   margin-bottom: 4px;
 }
 
 .call-desc-card {
-  font-size: 14px;
+  font-size: var(--size-text-deskripsi);
   font-weight: 700;
-  color: #12372A;
+  color: var(--warna-text-utama);
   line-height: 1.4;
 }
 
@@ -627,13 +636,13 @@ header {
 .call-form-title {
   font-size: 20px;
   font-weight: 800;
-  color: #12372A;
+  color: var(--warna-text-utama);
   margin: 0;
 }
 
 /* ==================== FOOTER ==================== */
 .footer {
-  background-color: #12372a;
+  background-color: var(--warna-text-utama);
   color: white;
   text-align: center;
   padding: 50px 40px 30px;
@@ -646,7 +655,7 @@ header {
 }
 
 .footer-logo i {
-  color: #2ead70;
+  color: var(--warna-button);
   margin-right: 8px;
 }
 
@@ -675,7 +684,7 @@ header {
 }
 
 .footer-nav a:hover {
-  color: #2ead70;
+  color: var(--warna-button);
 }
 
 .footer-bottom {
@@ -719,8 +728,9 @@ header {
   color: #13392a;
 }
 .section-artikel .head h2 {
-  font-size: 36px;
+  font-size: var(--size-judul);
   margin: 12px 0 18px;
+  font-weight: 700;
 }
 .section-artikel .head p {
   color: #5b6b63;
@@ -872,4 +882,40 @@ header {
   padding-left: 22px;
   color: #34483f;
   line-height: 1.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 30px;
+}
+
+.btn-back-to-top {
+  /* posisi fixed untuk membuat button stay pada layar dan tidak berpindah pada
+  saat halaman web bergulir/berpindah */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--warna-button);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(46, 173, 112, 0.4);
+  z-index: 999;
+  /* z-index mengatur tumpukan/layer jika value tinggi maka posisi jadi paling atas */
+  transition: all 0.2s ease;
+  display: none;
+}
+
+.btn-back-to-top:hover {
+  background-color: var(--warna-text-utama);
+  transform: translateY(-3px);
 }

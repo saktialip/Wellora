@@ -34,7 +34,7 @@
     </header>
 
     <hero>
-        <section class="hero">
+        <section class="hero" id="beranda">
         <div class="text-hero">
             <span class="badge-hero">
                 <i class="fa-solid fa-heart"></i>
@@ -61,7 +61,7 @@
         </section>
     </hero>
     <!-- card 1 -->
-    <section class="features">
+    <section class="features" id="fitur">
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">
@@ -171,7 +171,7 @@
       </div>
       </section>
       
-    <section class="about">
+    <section class="about" id="tentang">
       <div class="about-kiri">
         <span class="about-badge">
           <i class="fa-solid fa-leaf"></i> Tentang Wellora
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-<section class="section-artikel">
+<section class="section-artikel" id="artikel">
 
   <div class="head">
     <span class="eyebrow"><i class="fa-solid fa-book-open"></i> Edukasi & Inspirasi</span>
@@ -300,7 +300,7 @@
   </div>
 </section>
 
-<section class="call">
+<section class="call" id="kontak">
   <div class="call-header">
     <span class="call-badge">
       <i class="fa-solid fa-headset"></i> Hubungi Kami
@@ -376,5 +376,34 @@
         <p>© 2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS Flexbox Siswa Kelas X RPL.</p>
       </div>
     </footer>
+
+    <button id="BackToTop" class="btn-back-to-top" onclick="keAtasHalaman( )" >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // setiap kali user melakukan scroll, jalankan fungsi
+      // didalamnya, fungsi ini akan di panggil berulang
+      // selama pengguna melalukan scroll
+  window.addEventListener(`scroll`,function() {
+// getElementById : mengambil elemen html yang memiliki id BackToTop
+    const btnTop = document.getElementById(`BackToTop`);
+
+    if(window.scrollY > 300){
+      btnTop.style.display = `block`;
+    } else {
+      btnTop.style.display = `none`;
+    }
+
+  });
+
+  function keAtasHalaman(){
+    window.scrollTo({
+      top : 0, behavior: `smooth`
+      // bergulir halus ke bagian atas
+    })
+  }
+    </script>
+
 </body>
 </html>
