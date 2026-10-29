@@ -960,8 +960,12 @@ section {
   color: #14432f;
 }
 
-.share-label i { color: #2fa36b; }
-.share-buttons { display: flex; gap: 10px; }
+.share-label i { color: #2fa36b;
+}
+
+.share-buttons { display: flex; gap: 10px; 
+}
+
 .share-btn {
   width: 36px;
   height: 36px;
