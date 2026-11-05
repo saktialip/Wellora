@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellora</title>
+    <script src="script.js" defer></script>
     <link rel="shortcut icon" href="assets/logo wellora.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -257,46 +258,24 @@
   <div class="grid">
 
     <!-- KARTU 1 -->
-    <article class="card">
-      <img src="assets/sayur.jpg" alt="Aneka sayuran segar">
-      <div class="body">
-        <div class="meta">
-          <span class="chip">Nutrisi</span>
-          <span>5 mnt baca</span>
-        </div>
-        <h3>5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h3>
-        <p>Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.</p>
-        <a class="more" href="artikel-1.html?id=0">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
+<main class="daftar-kartu" id="daftar-kartu"></main>
 
-    <!-- KARTU 2 -->
-    <article class="card">
-      <img src="assets/tangga.jpg" alt="Kaki berlari menaiki tangga">
-      <div class="body">
-        <div class="meta">
-          <span class="chip">Kebugaran</span>
-          <span>4 mnt baca</span>
-        </div>
-        <h3>Berapa Langkah Kaki yang Sebenarnya Dibutuhkan Tubuh?</h3>
-        <p>Kupas tuntas mitos 10.000 langkah dan fakta ilmiah tentang kebutuhan gerak harian untuk menjaga kesehatan jantung dan stamina.</p>
-        <a class="more" href="artikel-2.html?id=1">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+<template id="template">
+  <a class="card">
+    <img class="gambar" src="" alt="">
+    <div class="body">
+      <div class="meta">
+        <span class="chip-kategori"></span>
+        <span class="waktu"></span>
       </div>
-    </article>
+      <h3 class="judul"></h3>
+      <p class="deskripsi"></p>
+      <div class="more">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+  </a>
+</template>
 
-    <!-- KARTU 3 -->
-    <article class="card">
-      <img src="assets/tidur.jpg" alt="Kucing tidur di bawah selimut">
-      <div class="body">
-        <div class="meta">
-          <span class="chip">Pola Tidur</span>
-          <span>6 mnt baca</span>
-        </div>
-        <h3>Rahasia Tidur Nyenyak Demi Produktivitas Maksimal</h3>
-        <p>Kualitas tidur menentukan metabolisme tubuh. Terapkan 4 kebiasaan malam ini untuk bangun dengan energi penuh keesokan hari.</p>
-        <a class="more" href="artikel-3.html?id=2">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
+
 
   </div>
 </section>

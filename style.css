@@ -747,8 +747,13 @@ header {
 
 /* 3 kartu berjajar */
 .section-artikel .grid {
+  display: block;
+  width: 100%;
+}
+
+.section-artikel .daftar-kartu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   width: 100%;
 }
@@ -758,6 +763,8 @@ header {
   background: #ffffff;
   border-radius: 24px;
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
   box-shadow: 0 6px 24px rgba(19, 57, 42, 0.08);
   display: flex;
   flex-direction: column;
@@ -795,7 +802,8 @@ header {
   font-size: 12px;
   color: #5b6b63;
 }
-.section-artikel .chip {
+.section-artikel .chip,
+.section-artikel .chip-kategori {
   color: var(--warna-button);
   background: #f1faf5;
   border: 1px solid #cfe9da;
@@ -808,6 +816,7 @@ header {
   font-size: 17px;
   line-height: 1.4;
   margin: 18px 0 10px;
+  font-weight: 700;
 }
 .section-artikel .card p {
   font-size: 13px;
@@ -823,9 +832,6 @@ header {
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
-}
-.section-artikel .more:hover {
-  text-decoration: underline;
 }
 
 /* ===== Halaman Artikel ===== */
