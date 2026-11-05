@@ -211,10 +211,10 @@ header {
 }
 
 .feature-card {
-  flex: 0 1 220px;
+  flex: 0 1 240px;
   background: white;
   border-radius: 20px;
-  padding: 32px 24px;
+  padding: 40px 28px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
   border: 1px solid #E8F5ED;
@@ -228,8 +228,8 @@ header {
 }
 
 .feature-icon {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: 16px;
   background: #E7F7EE;
   display: flex;
@@ -237,13 +237,13 @@ header {
   justify-content: center;
   margin: 0 auto 20px;
   color: var(--warna-button);
-  font-size: 24px;
+  font-size: 28px;
   transition: all 0.3s ease;
 }
 
 
 .feature-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--warna-text-utama);
   margin-bottom: 10px;
@@ -545,104 +545,177 @@ header {
   margin-top: 5px;
 }
 
-.call {
-  padding: 60px 20px;
-  background-color: #F8FCF9;
+/* ==================== CONTACT SECTION ==================== */
+.contact {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 0 55px;
 }
 
-.call-kiri {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 520px;
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-badge i {
+  margin-right: 5px;
+}
+
+.contact-title {
+  color: var(--warna-text-utama);
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.contact-desc {
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.call-header {
-  text-align: center;
-  margin-bottom: 24px;
+.contact-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.call-badge {
-  font-size: 14px;
-  color: var(--warna-text-utama);
-  font-weight: 700;
+/* Info Kontak - Kolom Kiri */
+.contact-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.call-title {
-  font-size: 32px;
-  font-weight: 800;
-  color: var(--warna-text-utama);
-  line-height: 1.25;
-  margin: 12px 0;
-}
-
-.call-desc {
-  font-size: var(--size-text-deskripsi);
-  color: var(--warna-deskripsi);
-  line-height: 1.6;
-}
-
-.call-item-card {
+.info-card {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
+  padding: 20px;
   background-color: white;
-  padding: 16px 20px; 
-  border-radius: 20px;
-  border: 1px solid #E5E9E8;
-  box-shadow: 0 6px 20px rgba(18, 55, 42, 0.06);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(18, 55, 42, 0.05);
+  border: 1px solid #e8f5ed;
 }
 
-.call-icon {
-  width: 42px;
-  height: 42px;
+.info-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #e7f7ee;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  font-size: 18px;
   color: var(--warna-button);
-  background-color: #E7F7EE;
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
-.call-title-card {
-  font-size: 12px;
-  color: var(--warna-deskripsi);
-  margin-bottom: 4px;
+.info-text {
+  flex: 1;
 }
 
-.call-desc-card {
-  font-size: var(--size-text-deskripsi);
-  font-weight: 700;
+.info-label {
+  color: #829188;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.info-value {
   color: var(--warna-text-utama);
-  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.call-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.call-kanan {
-  flex: 1.2;
-  min-width: 0;
+/* Form Kontak - Kolom Kanan */
+.contact-form {
+  width: 60%;
   padding: 30px;
   background-color: white;
-  border-radius: 24px;
-  border: 1px solid #E5E9E8;
-  box-shadow: 0 10px 30px rgba(18, 55, 42, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+  border: 1px solid #e8f5ed;
 }
 
-.call-form-title {
-  font-size: 20px;
-  font-weight: 800;
+.form-title {
   color: var(--warna-text-utama);
-  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.form-desc {
+  color: #829188;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--warna-text-utama);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e5e9e8;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fcf9;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--warna-button);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-kirim {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--warna-button);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 173, 112, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-kirim i {
+  margin-left: 8px;
+}
+
+.btn-kirim:hover {
+  background-color: #248c5a;
+  transform: translateY(-2px);
 }
 
 /* ==================== FOOTER ==================== */
@@ -993,4 +1066,95 @@ section {
 .related {
   max-width: 832px;
   margin: 70px auto 40px;
+}
+
+/* kalkulator BMI */
+
+.bmi {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(18, 55, 42, 0.08);
+  font-family: sans-serif;
+}
+
+.bmi h2 {
+  margin: 0 0 6px;
+  font-size: calc(var(--size-judul) * 0.67); /* sekitar 24px */
+  color: var(--warna-text-utama);
+}
+
+.bmi .sub {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--warna-deskripsi);
+}
+
+.bmi .field {
+  margin-bottom: 16px;
+}
+
+.bmi label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--warna-text-utama);
+}
+
+.bmi input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  background: #f4faf6;
+  border: 1px solid #e2ece6;
+  border-radius: 14px;
+  font-size: var(--size-text-deskripsi);
+  color: var(--warna-text-utama);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bmi input:focus {
+  border-color: var(--warna-button);
+  box-shadow: 0 0 0 3px rgba(46, 173, 112, 0.15);
+}
+
+.bmi button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 16px;
+  background: var(--warna-button);
+  color: #fff;
+  font-size: var(--size-text-deskripsi);
+  font-weight: 700;
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(46, 173, 112, 0.3);
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.1s;
+}
+
+.bmi button:hover {
+  filter: brightness(0.92);
+}
+
+.bmi button:active {
+  transform: scale(0.98);
+}
+
+.bmi #hasil {
+  margin: 20px 0 0;
+  padding: 14px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--warna-text-utama);
+  background: #f4faf6;
+  border-radius: 14px;
+}
+
+.bmi #hasil:empty {
+  display: none;
 }

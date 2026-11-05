@@ -99,6 +99,7 @@
           <h3 class="feature-title">Pantau Perkembangan</h3>
           <p class="feature-desc">Lihat capaian kesehatan setiap hari dan tetap termotivasi setiap saat</p>
         </div>
+      </div>
     </section>
       <section class="solution">
         <div class="solution-container">
@@ -280,60 +281,119 @@
   </div>
 </section>
 
-<section class="call" id="kontak">
-  <div class="call-header">
-    <span class="call-badge">
-      <i class="fa-solid fa-headset"></i> Hubungi Kami
-    </span>
-    <h2 class="call-title">Ada Pertanyaan? Kami Siap Membantu</h2>
-    <p class="call-desc">
-      Punya pertanyaan seputar aplikasi Wellora, kemitraan, atau ingin berkonsultasi? Kirimkan pesan Anda ke tim kami.
-    </p>
+
+    <!-- KALKULATOR BMI (di bawah berita) -->
+<section class="bmi">
+  <h2>Kalkulator BMI</h2>
+  <p class="sub">Isi berat dan tinggi badanmu untuk mengetahui kategori BMI.</p>
+
+  <div class="field">
+    <label for="berat">Berat Badan (kg)</label>
+    <input type="number" id="berat" placeholder="Contoh: 60">
   </div>
 
-  <div class="call-wrapper">
-
-    <div class="call-kiri">
-      <div class="call-item-card">
-        <div class="call-icon"><i class="fa-solid fa-envelope"></i></div>
-        <div class="call-text">
-          <div class="call-title-card">Email Resmi</div>
-          <div class="call-desc-card">support@wellora.id</div>
-        </div>
-      </div>
-
-      <div class="call-item-card">
-        <div class="call-icon"><i class="fa-solid fa-phone"></i></div>
-        <div class="call-text">
-          <div class="call-title-card">Telepon / WhatsApp</div>
-          <div class="call-desc-card">+62 812-3456-7890</div>
-        </div>
-      </div>
-
-      <div class="call-item-card">
-        <div class="call-icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="call-text">
-          <div class="call-title-card">Alamat Kantor</div>
-          <div class="call-desc-card">Gedung Wellora Health Center, Jakarta Selatan, Indonesia</div>
-        </div>
-      </div>
-
-      <div class="call-item-card">
-        <div class="call-icon"><i class="fa-solid fa-clock"></i></div>
-        <div class="call-text">
-          <div class="call-title-card">Jam Layanan</div>
-          <div class="call-desc-card">Senin – Jumat, 08.00 – 17.00 WIB</div>
-        </div>
-      </div>
-    </div>
-    <!-- .call-kiri DITUTUP di atas, sebelum .call-kanan -->
-
-    <div class="call-kanan">
-      <h3 class="call-form-title">Kirim Pesan Langsung</h3>
-    </div>
-
+  <div class="field">
+    <label for="tinggi">Tinggi Badan (cm)</label>
+    <input type="number" id="tinggi" placeholder="Contoh: 165">
   </div>
+
+  <button id="tombol">Hitung BMI</button>
+  <p id="hasil"></p>
 </section>
+
+
+<!-- CONTACT SECTION -->
+    <section class="contact" id="kontak">
+      <div class="contact-header">
+        <span class="contact-badge">
+          <i class="fa-solid fa-headset"></i> Hubungi Kami
+        </span>
+        <h2 class="contact-title">Ada Pertanyaan? Kami Siap Membantu</h2>
+        <p class="contact-desc">
+          Punya pertanyaan seputar fitur aplikasi Wellora, kemitraan, atau ingin berkonsultasi? 
+          Kirimkan pesan Anda kepada tim kami.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Info Kontak -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <p class="info-label">Email Resmi</p>
+              <p class="info-value">support@wellora.id</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <p class="info-label">Telepon / WhatsApp</p>
+              <p class="info-value">+62 812-3456-7890</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-text">
+              <p class="info-label">Alamat Kantor</p>
+              <p class="info-value">Gedung Wellora Health Center, Jakarta Selatan, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="info-text">
+              <p class="info-label">Jam Layanan</p>
+              <p class="info-value">Senin – Jumat, 08.00 – 17.00 WIB</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="contact-form">
+          <h3 class="form-title">Kirim Pesan Langsung</h3>
+          <p class="form-desc">Isi formulir berikut dan tim kami akan membalas dalam 1x24 jam kerja.</p>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama Anda">
+              </div>
+              <div class="form-group"> 
+                <label>Alamat Email</label>
+                <input type="email" placeholder="nama@email.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Subjek Pesan</label>
+              <input type="text" placeholder="Contoh: Pertanyaan seputar fitur">
+            </div>
+
+            <div class="form-group">
+              <label>Pesan Anda</label>
+              <textarea rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-kirim">
+              Kirim Pesan Sekarang <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
 <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-logo">

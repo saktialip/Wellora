@@ -130,3 +130,27 @@ if (detailArtikel) {
     detailArtikel.innerHTML = "<p>Artikel tidak ditemukan. Silakan kembali dan pilih artikel yang tersedia.</p>";
   }
 }
+
+const berat = document.getElementById("berat");
+const tinggi = document.getElementById("tinggi");
+const tombol = document.getElementById("tombol");
+const hasil = document.getElementById("hasil");
+
+tombol.addEventListener("click", function () {
+  const b = Number(berat.value);
+  const t = Number(tinggi.value) / 100;
+  const bmi = b / (t * t);
+
+  let kategori = "";
+  if (bmi < 18.5) {
+    kategori = "Kurus";
+  } else if (bmi < 25) {
+    kategori = "Normal";
+  } else if (bmi < 30) {
+    kategori = "Berlebih";
+  } else {
+    kategori = "Obesitas";
+  }
+
+  hasil.textContent = "BMI: " + bmi.toFixed(1) + " (" + kategori + ")";
+});
