@@ -205,16 +205,17 @@ header {
 
 .features-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 24px;
 }
 
 .feature-card {
-  flex: 0 1 240px;
+  flex: 1 1 0;
+  min-width: 0;
   background: white;
   border-radius: 20px;
-  padding: 40px 28px;
+  padding: 42px 24px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
   border: 1px solid #E8F5ED;
@@ -228,8 +229,8 @@ header {
 }
 
 .feature-icon {
-  width: 68px;
-  height: 68px;
+  width: 76px;
+  height: 76px;
   border-radius: 16px;
   background: #E7F7EE;
   display: flex;
@@ -237,13 +238,13 @@ header {
   justify-content: center;
   margin: 0 auto 20px;
   color: var(--warna-button);
-  font-size: 28px;
+  font-size: 32px;
   transition: all 0.3s ease;
 }
 
 
 .feature-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--warna-text-utama);
   margin-bottom: 10px;
@@ -1071,7 +1072,8 @@ section {
 /* kalkulator BMI */
 
 .bmi {
-  max-width: 420px;
+  width: 90%;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 32px;
   background: #fff;
